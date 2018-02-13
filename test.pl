@@ -1,6 +1,8 @@
 use strict;
 use warnings;
 
+use Math::Complex ':pi';
+
 #use the TRNG and pull a number
 use Crypt::Random qw( makerandom );
 
@@ -10,6 +12,7 @@ use Math::Random::MT qw( irand );
 
 #make an array to house the numbers from the TRNG
 
+#print pi;
 
 my @trn; 
 my $trnumber;
