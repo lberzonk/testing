@@ -7,6 +7,9 @@ use Math::Complex ':pi';
 #use the TRNG and pull a number
 use Crypt::Random qw( makerandom );
 
+#import Math::Cephes package to calculate gcd
+
+use Math::Cephes qw ( euclid );
 
 #initialize Math::Random::MT module as a PRNG
 use Math::Random::MT qw( irand );
@@ -48,11 +51,6 @@ for (my $k=0; $k <= 999; $k++) {
 	@rand_built_in[$k] = $rand;
 
 }
-
-
-#print $x, "\n";
-
-#print $y, "\n";
 
 
 
