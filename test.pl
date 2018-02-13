@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 
+# use Math::Complex to pull the number pi from the perl module.
 use Math::Complex ':pi';
 
 #use the TRNG and pull a number
