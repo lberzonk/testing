@@ -1,5 +1,6 @@
 use strict;
 use warnings;
+# Made by Lev Berzon-Kozlov and Christopher Cozart
 
 # use Math::Complex to pull the number pi from the perl module.
 use Math::Complex ':pi';
@@ -52,7 +53,25 @@ for (my $k=0; $k <= 999; $k++) {
 
 }
 
+my $gcd_counter = 0;
 
+#get gcd of the trngs
+for (my $c=0; $c <= 998; $c+2){
 
-
-
+	my $first;
+	my $second;
+	my $q = $c + 1;
+	
+	
+	$first = @trn[$c];
+	$second = @trn[$q];
+	
+	my $gcd = euclid ($first , $second);
+		
+		if ($gcd == 1) {
+					
+			$gcd_counter++;
+		}
+		
+}		
+		
